@@ -4502,6 +4502,7 @@ ul.pagination.pagination-pasific li.active a {
     min-height: 500px;
     background: url('../../img/header_bg.png') 0 0 no-repeat;
     background-size: 100% 100%;
+    height: 100%;
 }
 .parallax-window-2 {
     min-height: 350px;
