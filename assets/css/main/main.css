@@ -4588,7 +4588,7 @@ a.dashed-href{
     padding: 40px 150px;
 }
 #chart{
-      clip: rect(0, 2470px 473px, 0);
+      clip: rect(0, 2470px 473px, 0);   
     -webkit-animation: chart 5s linear;
     animation: chart 5s linear;
     position: absolute;
@@ -4596,7 +4596,9 @@ a.dashed-href{
     width: 100%;
     height: 473px;
     bottom: 0;
+    
     animation-name: chart;
+
 }
 @keyframes chart{
 
