@@ -42,7 +42,7 @@ input[type=checkbox]:checked + label:before,
 .button-pasific.hover-rectangle-out:before,
 .button-pasific.hover-shutter-out-horizontal:before,
 .button-pasific.hover-shutter-out-vertical:before {
-    background-color: #ff4530 !important;
+    background-color: #1B832C !important;
 }
 
 /*  --------------------------------------------------------
@@ -71,7 +71,7 @@ a.add-to-cart:hover,
 input[type=checkbox]:checked + label:before,
 #sidebar ul.tag li:hover,
 .copyright a:hover {        
-    border-color: #ff4530;
+    border-color: #1B832C;
 }
 
 

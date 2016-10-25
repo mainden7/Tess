@@ -2223,10 +2223,11 @@ table th.bg-pasific {
 /* navbar one-page */
 @media (max-width: 1200px) {
     .navbar-pasific.navbar-op {
-        background-color: #fff;
+        background-color: transparent;
         border-color: #e7e7e7;
         padding: 0;
         margin: 0;
+        padding-bottom: 15px;
     }
     .navbar-pasific.top-nav-collapse-inverse {
         background-color: #000;
@@ -2235,9 +2236,11 @@ table th.bg-pasific {
     .navbar-op.top-nav-collapse-inverse {
         padding: 0;
         margin: 0;
+        padding-bottom: 10px;
     }
     .navbar-op .navbar-header {
         float: none;
+        padding-bottom: 10px;
     }
     .navbar-op .navbar-brand {
         color: #333;
@@ -2264,14 +2267,17 @@ table th.bg-pasific {
     .navbar-op .navbar-nav {
         float: none!important;
 		margin-top: 7.5px;
+    text-align: center;
 	}
 	.navbar-op .navbar-nav>li {
         float: none;
-        font-size: 11px;
+        font-size: 20px;
     }
+    
     .navbar-op .navbar-nav>li>a {
         padding-top: 5px;
         padding-bottom: 5px;
+        color: rgba(255, 255, 255, 0.8) !important;
     }
     .navbar-op .navbar-collapse {
         background: transparent;
@@ -2289,6 +2295,9 @@ table th.bg-pasific {
            -moz-border-radius: 4px;
                 border-radius: 4px;
     }
+    .navbar-fixed-top .navbar-collapse{
+      max-height: 380px;
+    }
 }
 .navbar-op.top-nav-collapse,
 .navbar-mp.top-nav-collapse {
@@ -2299,7 +2308,7 @@ table th.bg-pasific {
     border-bottom: 1px solid #333;
 }
 .navbar-op.top-nav-collapse .navbar-nav li a {
-    color: #283347 !important;
+    color: #283347;
 }
 .navbar-op.top-nav-collapse-inverse .navbar-nav li a {
     color: #f5f5f5 !important;
@@ -2611,6 +2620,9 @@ table th.bg-pasific {
     .intro .intro-body .intro-text {
         font-size: 100%;
     }
+    .navbar-collapse .navbar-right .collapse .in{
+      max-height: 380px;
+    }
 }
 
 @media(max-width:768px) {
@@ -2619,9 +2631,15 @@ table th.bg-pasific {
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
-        height: 100%;
+        height: 50%;
         background-size: cover;
+    }
+    p.border-around{
+      padding: 10px;
     }    
+    .navbar-collapse .navbar-right .collapse .in{
+      max-height: 380px;
+    }
 }
 /* Particles */
 canvas {
@@ -3043,6 +3061,9 @@ canvas {
     #portfolioMasonry .portfolio-masonry-one-item.width2 { width: 300px; }
     #portfolioMasonry .portfolio-masonry-one-item.width3 { width: 300px; }
     #portfolioMasonry .portfolio-masonry-one-item.height2 { height: 276px; }
+    .button-lg{
+      padding: 20px 30px;
+    }
 }
 
 #portfolioMasonry .portfolio-masonry-one-item .portfolio-mask,
@@ -4478,7 +4499,7 @@ ul.pagination.pagination-pasific li.active a {
 31. PARALLAX
 -------------------------------------------------------- */
 .parallax-window {
-    min-height: 400px;
+    min-height: 500px;
     background: url('../../img/header_bg.png') 0 0 no-repeat;
     background-size: 100% 100%;
 }
@@ -4561,4 +4582,8 @@ a.dashed-href{
 .span-hover{
   color: #1B832C;
   transition: all 0.5s ease-in-out;
+}
+.border-around{
+  border: 5px solid #e6ecf4;
+    padding: 40px 150px;
 }
