@@ -4587,3 +4587,22 @@ a.dashed-href{
   border: 5px solid #e6ecf4;
     padding: 40px 150px;
 }
+#chart{
+      clip: rect(0, 100% 473px, 0);
+    -webkit-animation: chart 5s linear;
+    animation: chart 5s linear;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    bottom: 0;
+    animation-name: chart;
+}
+@keyframes chart{
+
+0% {
+    clip: rect(0px 1px 473px 0px);
+}
+100% {
+    clip: rect(0px 1170px 473px 0px);
+}
+}
