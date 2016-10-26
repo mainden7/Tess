@@ -172,108 +172,10 @@ $(document).ready(function() {
 	});
     
  
-    /* --------------------------------------------------------
-	 OWL CAROUSEL FOR TESTIMONIAL
-	----------------------------------------------------------- */
-    $(function() {
-        "use strict";
-        var owlSectionOneItem = $("#owlSectionOneItem");
-        owlSectionOneItem.owlCarousel({
-            autoPlay: 5000,
-            items : 1,  
-            itemsDesktop : [1000,1],  
-            itemsDesktopSmall : [900,1],  
-            itemsTablet: [600,1],  
-            itemsMobile : false
-        });
-        
-        var owlSectionTwoItem = $("#owlSectionTwoItem");
-        owlSectionTwoItem.owlCarousel({
-            autoPlay: 5000,
-            items : 2,  
-            itemsDesktop : [1000,2],  
-            itemsDesktopSmall : [900,2],  
-            itemsTablet: [600,2],  
-            itemsMobile : false
-        });
-        
-        var owlSectionThreeItem = $("#owlSectionThreeItem");
-        owlSectionThreeItem.owlCarousel({
-            autoPlay: 5000,
-            items : 3,  
-            itemsDesktop : [1000,3],  
-            itemsDesktopSmall : [900,3],  
-            itemsTablet: [600,1],  
-            itemsMobile : false
-        });
-        
-        var owlSectionFourItem = $("#owlSectionFourItem");
-        owlSectionFourItem.owlCarousel({
-            autoPlay: 5000,
-            items : 4,  
-            itemsDesktop : [1000,4],  
-            itemsDesktopSmall : [900,2],  
-            itemsTablet: [600,2],  
-            itemsMobile : false
-        });
-        
-        var owlSectionFiveItem = $("#owlSectionFiveItem");
-        owlSectionFiveItem.owlCarousel({
-            autoPlay: 5000,
-            items : 5,  
-            itemsDesktop : [1000,5],  
-            itemsDesktopSmall : [900,3],  
-            itemsTablet: [600,3],  
-            itemsMobile : false
-        });
-        
-        var owlSectionSixItem = $("#owlSectionSixItem");
-        owlSectionSixItem.owlCarousel({
-            autoPlay: 5000,
-            items : 6,  
-            itemsDesktop : [1000,6],  
-            itemsDesktopSmall : [900,3],  
-            itemsTablet: [600,3],  
-            itemsMobile : false
-        });
-        
-
-    });    
     
-    /* --------------------------------------------------------
-	 OWL CAROUSEL FOR SHOP
-	-----------------------------------------------------------  */          
-    $(function() {
-        "use strict";
-        var owlShop = $("#owlShop");
-
-        owlShop.owlCarousel({
-            slideSpeed : 1000,
-            autoPlay : true,
-            pagination: false,
-            items : 4, 
-        });
-
-        $(".shop-control-next").on('click', function(){
-            owlShop.trigger('owl.next');
-        })
-        $(".shop-control-prev").on('click', function(){
-            owlShop.trigger('owl.prev');
-        });
-
-    });
     
  
-    /* --------------------------------------------------------
-	 PAGE LOADER
-	----------------------------------------------------------- */
-    $(function() {
-		"use strict";		
-        $("body").imagesLoaded(function(){
-            $(".loader-item").delay(700).fadeOut();
-            $("#pageloader").delay(800).fadeOut("slow");
-        });
-	});
+  
     
     /* --------------------------------------------------------
 	 JQUERY TYPED
@@ -398,99 +300,7 @@ $(document).ready(function() {
 
 $(window).load(function() {
     
-    /* --------------------------------------------------------
-	 ISOTOPE MASONRY GRID
-	----------------------------------------------------------- */
-    $( function() {
-        "use strict";
-        
-        var $portfolioMasonryOne = $('.portfolio-masonry-one').isotope({
-            itemSelector: '.portfolio-masonry-one-item',
-            masonry: {
-              columnWidth: 180,
-              gutter: 10
-            }
-        }); 
-        
-        var $portfolioMasonryOneFullwidth = $('.portfolio-masonry-one-fullwidth').isotope({
-            itemSelector: '.portfolio-masonry-one-item',
-            masonry: {
-              columnWidth: 180,
-              gutter: 10
-            }
-        });
-        
-        var $portfolioMasonryTwo = $('.portfolio-masonry-two').isotope({
-            itemSelector: '.portfolio-masonry-two-item',
-            masonry: {
-              columnWidth: 250,
-              gutter: 10
-            }
-        });
-        
-        var $portfolioMasonryTwoFullwidth = $('.portfolio-masonry-two-fullwidth').isotope({
-            itemSelector: '.portfolio-masonry-two-item',
-            masonry: {
-              columnWidth: 250,
-              gutter: 10
-            }
-        });
-        
-        var $portfolio = $('.portfolio').isotope({
-            itemSelector: '.portfolio-item',
-            masonry: {
-              rowHeight: 280
-            }
-        });
-        
-        var $blogMasonry6col = $('.blog-masonry-6col').isotope({
-            itemSelector: '.blog-masonry-item',
-            masonry: {
-              columnWidth: '.col-lg-2',
-              gutter: 0
-            }
-        });
-        
-        var $blogMasonry4Col = $('.blog-masonry-4col').isotope({
-            itemSelector: '.blog-masonry-item',
-            masonry: {
-              columnWidth: '.col-md-3',
-              gutter: 0
-            }
-        });
-        
-        var $blogMasonry3Col = $('.blog-masonry-3col').isotope({
-            itemSelector: '.blog-masonry-item',
-            masonry: {
-              columnWidth: '.col-md-4',
-              gutter: 0
-            }
-        });
-        
-        var $blogMasonry2Col = $('.blog-masonry-2col').isotope({
-            itemSelector: '.blog-masonry-item',
-            masonry: {
-              columnWidth: '.col-md-6',
-              gutter: 0
-            }
-        });
-        
-        $('ul.filters li a').on('click', function() {
-            var filterValue = $( this ).attr('data-filter');
-            $portfolioMasonryOne.isotope({ filter: filterValue });
-            $portfolioMasonryOneFullwidth.isotope({ filter: filterValue });
-            $portfolioMasonryTwo.isotope({ filter: filterValue });
-            $portfolioMasonryTwoFullwidth.isotope({ filter: filterValue });
-            $portfolio.isotope({ filter: filterValue });
-        });       
-        
-
-        $('ul.filters li a').on('click', function(){
-            $('ul.filters li a').removeClass('active');
-            $(this).addClass('active');
-        });
-
-    });
+  
     
     /* --------------------------------------------
      SECURITY CHECK HUMAN
@@ -573,34 +383,5 @@ $(window).load(function() {
       }
     }
 
-    function initMap() {
-        var mapDiv = document.getElementById('map');
-        var myLatLng = {lat: 53.935237, lng: 27.494156};
-        styleArray = [
-        {
-          featureType: 'all',
-          stylers: [
-          {saturation: -80}
-          ]
-        },{
-          elementType: 'labels.icon',
-          stylers: [{visibility: 'off'}]
-        },
-        ];
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 53.935237, lng: 27.492156},
-          styles: styleArray,
-          scrollwheel: false,
-          zoom: 15          
-        });
-
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Tess',
-          icon: 'assets/img/other/map_pointer.png'
-        });
-      }
-
+    
 });
