@@ -4554,6 +4554,7 @@ ul.pagination.pagination-pasific li.active a {
 }
 .text-light{
   opacity: 0.8 !important;
+  font-weight: 300;
 }
 .text-light2{
   opacity: 0.5 !important;

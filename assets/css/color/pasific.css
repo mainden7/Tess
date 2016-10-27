@@ -2,10 +2,10 @@
 SELECTION COLOR
 -------------------------------------------------------- */
 ::-moz-selection { /* Code for Firefox */
-    background: #ff4530;
+    background: #1B832C;
 }
 ::selection {
-    background: #ff4530;
+    background: #1B832C;
 }
 
 /*  --------------------------------------------------------
