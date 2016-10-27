@@ -43,8 +43,13 @@ Envato Profile: http://themeforest.net/user/myboodesign
 -------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+/* @import url(https://fonts.googleapis.com/css?family=Lato); */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200);
+@import "http://webfonts.ru/import/lato.css";
+/*
+  Lato, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
+*/
+
 
 /*  ----------------------------------------------------
 2. GENERAL STYLES
@@ -292,7 +297,7 @@ ul, ol {
     color: #283347;
     margin: 0;
     padding: 0;
-    list-style: square inside;
+    list-style: square outside;
     list-style-image: url(../../img/dot.png);
 }
 ul.list-inline{
@@ -2073,6 +2078,9 @@ table th.bg-pasific {
     .carousel-caption p {
         font-size: 100%;
     }  
+    .hide-for-small{
+      display: none;
+    }
 }
 .svg-container {
     position: absolute;
@@ -2201,7 +2209,7 @@ table th.bg-pasific {
     background-color: transparent;
 }
 .top-nav-collapse {
-    padding: 10px 0;
+    padding: 0px 0;
     background: #fff !important;
 }
 .top-nav-collapse-inverse {
@@ -2220,6 +2228,10 @@ table th.bg-pasific {
        -moz-border-radius: 3px;
             border-radius: 3px;
 }
+#page-top > nav > div > div.navbar-collapse.collapse.navbar-right > ul > li:nth-child(8){
+  margin-left: 100px;
+}
+
 /* navbar one-page */
 @media (max-width: 1200px) {
     .navbar-pasific.navbar-op {
@@ -2297,6 +2309,9 @@ table th.bg-pasific {
     }
     .navbar-fixed-top .navbar-collapse{
       max-height: 380px;
+    }
+    #page-top > nav > div > div.navbar-collapse.collapse.navbar-right > ul > li:nth-child(8){
+      margin-left: 0;
     }
 }
 .navbar-op.top-nav-collapse,
@@ -3064,6 +3079,7 @@ canvas {
     .button-lg{
       padding: 20px 30px;
     }
+
 }
 
 #portfolioMasonry .portfolio-masonry-one-item .portfolio-mask,
@@ -4524,7 +4540,9 @@ ul.pagination.pagination-pasific li.active a {
     background: transparent;
 }
 
-
+.navbar-collapse > ul.nav{
+  padding-top: 7px;
+}
 
 .text-roboto{
   font-family: 'Roboto Condensed', sans-serif !important;
@@ -4541,11 +4559,11 @@ ul.pagination.pagination-pasific li.active a {
   opacity: 0.5 !important;
 }
 #welcome{
-  background: url('../../img/about_bg.jpg') 0 0 no-repeat;
+  background: url('../../img/about_bg.jpg') 0 250px no-repeat;
   background-size: 100% 100%;
 }
 #features{
-  background: url('../../img/circle_bg-min.png') 0 0 no-repeat;
+  background: url('../../img/circle_bg-min.png') 0 50% no-repeat;
   background-size: 100%;
 }
 .bg-light p,
@@ -4559,6 +4577,9 @@ ul.pagination.pagination-pasific li.active a {
 a.dashed-href{
   border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
 }
+.hidden-default{
+  display: none;
+}
 #list-tabs > li{
   padding: 10px 50px;
 }
@@ -4571,14 +4592,14 @@ a.dashed-href{
   border-bottom: none;
   color: #5cb85c;
 }
-#list-tabs > li:hover a,
+
 #list-tabs > li a:hover{
   border-bottom: none !important;
   color: #5cb85c !important;
   cursor: pointer;
 }
 #list-tabs > li:not(:last-child){
-  margin-right: 40px;
+  margin-right: 0px;
 }
 .span-hover{
   color: #1B832C;
@@ -4587,6 +4608,9 @@ a.dashed-href{
 .border-around{
   border: 5px solid #e6ecf4;
     padding: 40px 150px;
+}
+.box-shadow{
+  box-shadow: 0 0 40px 0 rgba(29, 43, 67, 0.47);
 }
 #chart{
        
@@ -4613,4 +4637,44 @@ a.dashed-href{
 100% {
     clip: rect(0px 2470px 473px 0px);
 }
+}
+
+.maplabel{
+  background: #fff;
+    padding: 20px 40px;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    left: 150px;
+    display: none;
+}
+.maplabel i{
+  position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 300;
+    color: #9b9a9a;
+}
+.maplabel i:hover{
+  cursor: pointer;
+}
+.maplabel h4{
+  font-weight: bold;
+}
+.maplabel p,
+.gm-style-iw p{
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.maplabel:after{
+    content: '';
+    /* bottom: -100px; */
+    border-style: solid;
+    border-width: 30px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+    z-index: 123;
+    position: absolute;
+    bottom: -25px;
+    right: 46%;
 }

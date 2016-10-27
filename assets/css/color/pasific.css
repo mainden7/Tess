@@ -43,6 +43,8 @@ input[type=checkbox]:checked + label:before,
 .button-pasific.hover-shutter-out-horizontal:before,
 .button-pasific.hover-shutter-out-vertical:before {
     background-color: #1B832C !important;
+    border-radius: 30px;
+        box-shadow: 0px 0 40px 0px rgba(27, 131, 44, 0.49);
 }
 
 /*  --------------------------------------------------------

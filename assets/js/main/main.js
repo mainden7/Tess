@@ -383,5 +383,16 @@ $(window).load(function() {
       }
     }
 
+    $(function(){
+      $('#list-tabs li a').click(function(){
+        var filter = $(this).parent().attr('data-filter');
+        $('#list-tabs li').removeClass('active');
+        $('.hide-by-click').hide();
+        $(this).parent().addClass('active');
+        var id = '#' + filter;
+        $(id).show();
+      });
+    });
+
     
 });

@@ -64,7 +64,16 @@
     
   </head>
   <body  id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100">
-
+  <style type="text/css">
+      
+      .bg-grid>div{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        border-left: 1px solid rgba(255,255,255, 0.06);
+      }
+    </style>
+        
     <!-- Page Loader
     ===================================== -->
     <!-- <div id="pageloader">
@@ -91,7 +100,7 @@
           </button>
         </div>
         <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav mr20">
+          <ul class="nav navbar-nav">
             <li class="hidden"><a href="op-index-bg-video.html#page-top"></a></li>
             <li><a href="op-index-bg-video.html#welcome">О Нас</a></li>
             <li><a href="op-index-bg-video.html#service">Услуги</a></li>
@@ -99,18 +108,20 @@
             <li><a href="op-index-bg-video.html#features">Стоимость</a></li>
             <li><a href="op-index-bg-video.html#price">Отзывы</a></li>
             <li><a href="op-index-bg-video.html#contact">Контакты</a></li>  
-            <li><a href="op-index-bg-video.html" style='font-size: 18px; opacity: 1 !important; ' class="text-bold">+7(915)419 09 17</a></li>                      
+            <li><a href="op-index-bg-video.html" style='font-size: 18px; opacity: 1 !important; padding-right: 0' class="text-bold">+7(915)419 09 17</a></li>                      
           </ul>
         </div>
 
       </div>
     </nav>
+    
 
     <!-- Intro Area
     ===================================== -->
     <header class="intro parallax-window">
+    
     <img src="assets/img/chart.png" id='chart' alt="">
-      <div class="intro-body bg-dark-video">
+      <div class="intro-body bg-dark-video">        
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -123,9 +134,25 @@
       </div>
 
     </header>
-    <script src="assets/js/core/jquery.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
-
+    
+<div class="container">
+          <div class="row">
+            <div class="col-md-12 bg-grid">
+              <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
 <!-- Welcome Area
   ===================================== -->
   <div id="welcome" class=" pt100 pb160">
@@ -162,14 +189,17 @@
       </div>              
     </div>
   </div>
+  
  <!-- Service Area
  ===================================== -->
- <div id="service" class="bg-light bg-light2 pt100 pb210">
+ <div id="service" class="bg-light bg-light2 pt100 pb50">
   <div class="container-fluid">
 
     <!-- title and short description start -->
     <div class="row mb120">
-      <div class="col-md-12 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
         <h1 class="font-size-bold mt0 mb40 text-uppercase animated" data-animation="zoomInLeft" data-animation-delay="100">
 
           Услуги
@@ -181,6 +211,8 @@
         <p class="text-light mb0">
           Обьеденяем в работе маркетинговую аналитику, для оценки ситуации и рынка, и управленческие инструменты, для достижения поставленных целей.
         </p>
+      </div>
+        </div>
       </div>
     </div>
     <!-- title and short description end -->
@@ -194,7 +226,7 @@
 
             <h2 class='mt0 text-uppercase mb50 text-bold' style="font-size: 36px">Вывод компании из кризиса</h2>
 
-            <ul class="text-light">
+            <ul class="" style="padding-left: 13px;">
               <li>Аудит внутренних и внешних процессов компании</li>
               <li>Поиск и расширение узких мест</li>
               <li>Повышение конкурентноспособности компании</li>
@@ -244,7 +276,7 @@
 
             <h2 class="text-bold text-uppercase mt0 mb50" style="font-size: 36px">Маркетинговые исследования</h2>
 
-            <ul class="text-light">
+            <ul class="text-light" style="padding-left: 13px;">
               <li>Описание моделей поведения и принятия решений о покупке</li>
               <li>Позиционирование, переупаковка продуктов</li>
               <li>Оценка востребованности продукта/услуги</li>
@@ -259,7 +291,7 @@
       </div>
     </div>
     <!-- service three end -->
-    <div class="row" style='background: url("assets/img/services_bg_4.png") 100% 0 no-repeat;'>
+    <div class="row pb160" style='background: url("assets/img/services_bg_4.png") 100% 0 no-repeat;'>
       <div class="container">
         <div class="row">
          
@@ -303,7 +335,7 @@
 
             <div class="col-md-12 text-center mb80">
               <p class="text-light mb0 animated" data-animation="zoomInLeft" data-animation-delay="300">
-                В нашем активе проекты для российских и международныx4444444444444444 компаний
+                В нашем активе проекты для российских и международныx компаний
               </p>
             </div>
           </div>
@@ -319,18 +351,59 @@
                   </ul>
                 </div>
               </div>
-              <div class="row mb120 pb40" style="background: url('assets/img/case_img.jpg') 15px 0 no-repeat; background-size: 50% 100%;">
-                <div class="col-md-5 col-md-offset-1" >
+              <div class="row mb120 pb40" >
+                <div id="microsoft" class="hide-by-click">
+                  <div class="col-md-5 col-md-offset-1 hide-for-small" style="background: url('assets/img/case_img.jpg') 15px 0 no-repeat; background-size: 100% 100%; height: 500px">
 
-                </div>
-                <div class="col-md-6 col-md-pull-1 pt50 pl70 pr70 pb50 bg-light mt50">
-                  <h3 class="text-uppercase text-bold mt0 mb40">Долгосрочная программа лояльности</h3>
-                  <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Задача</p>
-                  <p class="mt0 mb30 text-light" style="font-size: 16px">Рассчитать емкость и тенденции 37 рынков мобильных девайсов для среднего и крупного бизнеса</p>
-                  <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Результат</p>
-                  <p class="mb0 text-light" style="font-size: 16px">Рассчитать емкость и тенденции рынков мобильных. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. </p>
                   </div>
+                  <div class="col-md-6 col-md-pull-1 pt50 pl70 pr70 pb50 bg-light mt50 box-shadow">
+                    <h3 class="text-uppercase text-bold mt0 mb40">Долгосрочная программа лояльности 1</h3>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Задача</p>
+                    <p class="mt0 mb30 text-light" style="font-size: 16px">Рассчитать емкость и тенденции 37 рынков мобильных девайсов для среднего и крупного бизнеса</p>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Результат</p>
+                    <p class="mb0 text-light" style="font-size: 16px">Рассчитать емкость и тенденции рынков мобильных. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
+                <div id="level" class="hide-by-click hidden-default">
+                  <div class="col-md-5 col-md-offset-1 hide-for-small" style="background: url('assets/img/case_img.jpg') 15px 0 no-repeat; background-size: 100% 100%; height: 500px">
+
+                  </div>
+                  <div class="col-md-6 col-md-pull-1 pt50 pl70 pr70 pb50 bg-light mt50 box-shadow">
+                    <h3 class="text-uppercase text-bold mt0 mb40">Долгосрочная программа лояльности 2</h3>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Задача</p>
+                    <p class="mt0 mb30 text-light" style="font-size: 16px">Рассчитать емкость и тенденции 37 рынков мобильных девайсов для среднего и крупного бизнеса</p>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Результат</p>
+                    <p class="mb0 text-light" style="font-size: 16px">Рассчитать емкость и тенденции рынков мобильных. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
+                <div id="yota" class="hide-by-click hidden-default">
+                  <div class="col-md-5 col-md-offset-1 hide-for-small" style="background: url('assets/img/case_img.jpg') 15px 0 no-repeat; background-size: 100% 100%; height: 500px">
+
+                  </div>
+                  <div class="col-md-6 col-md-pull-1 pt50 pl70 pr70 pb50 bg-light mt50 box-shadow">
+                    <h3 class="text-uppercase text-bold mt0 mb40">Долгосрочная программа лояльности 3</h3>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Задача</p>
+                    <p class="mt0 mb30 text-light" style="font-size: 16px">Рассчитать емкость и тенденции 37 рынков мобильных девайсов для среднего и крупного бизнеса</p>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Результат</p>
+                    <p class="mb0 text-light" style="font-size: 16px">Рассчитать емкость и тенденции рынков мобильных. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
+                <div id="teva" class="hide-by-click hidden-default">
+                  <div class="col-md-5 col-md-offset-1 hide-for-small" style="background: url('assets/img/case_img.jpg') 15px 0 no-repeat; background-size: 100% 100%; height: 500px">
+
+                  </div>
+                  <div class="col-md-6 col-md-pull-1 pt50 pl70 pr70 pb50 bg-light mt50 box-shadow">
+                    <h3 class="text-uppercase text-bold mt0 mb40">Долгосрочная программа лояльности 4</h3>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Задача</p>
+                    <p class="mt0 mb30 text-light" style="font-size: 16px">Рассчитать емкость и тенденции 37 рынков мобильных девайсов для среднего и крупного бизнеса</p>
+                    <p class="text-uppercase color-success mb0 text-roboto" style="color: #1B832C !important">Результат</p>
+                    <p class="mb0 text-light" style="font-size: 16px">Рассчитать емкость и тенденции рынков мобильных. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
                 </div>
                 <div class="row animated" data-animation="fadeInDown" data-animation-delay="100">
                   <div class="col-md-12">
@@ -418,7 +491,7 @@
     </div><!-- row end -->   
     <div class="row">
       <div class="col-md-12 text-center">
-        <a class="button button-red button-lg hover-ripple-out animated  visible text-bold" data-animation="fadeInUp" data-animation-delay="300">Запросить звонок/встречу</a>
+        <a class="button-o button-pasific button-lg hover-bounce-to-right ml10 animated fadeInUp visible text-bold" data-animation="fadeInUp" data-animation-delay="300">Запросить звонок/встречу</a>
       </div>
     </div>             
   </div><!-- container end -->
@@ -444,7 +517,21 @@
        </div>
         <!-- Map
         =====================================-->
-        <div id="contact">
+        <div id="contact" style='position: relative;'>
+          <div class="maplabel" id='maplabel1'>
+            
+            <h4>Москва</h4>
+            <p>Серебряническая набережная, 29</p>
+            <p>+7(915) 419 09 17</p>
+            <p>mail@tesstech.ru</p>
+          </div>
+          <div class="maplabel" id='maplabel2'>
+            
+            <h4>Новосибирск</h4>
+            <p>Серебряническая набережная, 29</p>
+            <p>+7(915) 419 09 17</p>
+            <p>mail@tesstech.ru</p>
+          </div>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
@@ -469,7 +556,7 @@
               </div>
               <div class="col-md-4">
                 <h2 class="text-uppercase text-right mt0 text-bold mb0"  style="font-size: 21px; line-height: 21px;">+7(915) 419-09-17</h2>
-                <p class="text-right"><a href="" class="text-light2" style="font-size: 16px">Перезвонить?</a></p>
+                <p class="text-right"><a href="" class="text-light2" style="font-size: 16px; border-bottom: 1px dashed #685c5c">Перезвонить?</a></p>
               </div>
             </div>
           </div>
@@ -480,6 +567,8 @@
     
     <!-- JQuery Main
     =====================================-->
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
     <script src="assets/js/main/jquery.appear.js"></script>
     <script src="assets/js/main/jquery.sticky.js"></script>
     <script src="assets/js/main/main.js"></script> 
@@ -489,7 +578,9 @@
     <script type="text/javascript">
       function initMap() {
         var mapDiv = document.getElementById('map');
-        var myLatLng = {lat: 54.969655, lng: 82.6692294};
+       
+        var myLatLng1 = {lat: 55.7479274, lng: 37.4851859};
+         var myLatLng2 = {lat: 54.969655, lng: 82.6692294};
         styleArray = [
         {
           featureType: 'all',
@@ -508,12 +599,47 @@
           zoom: 5         
         });
 
+        var content1 = $('#maplabel1').html();
+        var content2 = $('#maplabel2').html();
 
-        var marker = new google.maps.Marker({
-          position: myLatLng,
+        var infoWindow1 = new google.maps.InfoWindow({
+          content: content1,
+          map: map,
+          position: myLatLng1
+        });
+
+        var infoWindow2 = new google.maps.InfoWindow({
+          content: content2,
+          position: myLatLng2
+        });
+
+        var marker1 = new google.maps.Marker({
+          position: myLatLng1,
+          title: 'Tess',
+          icon: 'assets/img/pointer_sprite.png'
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: myLatLng2,
           map: map,
           title: 'Tess',
           icon: 'assets/img/pointer_sprite.png'
+        });
+
+        
+
+        marker2.addListener('click', function(){
+         infoWindow1.close();
+         infoWindow2.open(map);
+         marker1.setMap(map);
+         marker2.setMap(null);
+        });
+
+        marker1.addListener('click', function(){
+         infoWindow2.close();
+         infoWindow1.open(map);
+         marker2.setMap(map);
+         marker1.setMap(null);
         });
       }
 
