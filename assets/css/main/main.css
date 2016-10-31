@@ -4947,6 +4947,13 @@ a.dashed-href{
   padding: 20px 30px !important;
 }
 @media(max-width: 1200px){
+  #nav1 > div.cont{
+    width: 100%;
+  margin-left: 0 !important;
+ padding-left: 0 !important; 
+}
+}
+@media(max-width: 1200px){
  /*  #nav1{
    display: none;
  } */
@@ -4955,6 +4962,7 @@ a.dashed-href{
       background: transparent !important;
     border-bottom: 1px solid transparent;
 }
+
 #nav1 > div > div.navbar-collapse.navbar-right.collapse.in,
 #nav1 > div > div.navbar-collapse.navbar-right.collapsing{
       position: absolute;
