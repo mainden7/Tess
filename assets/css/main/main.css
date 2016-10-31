@@ -170,6 +170,9 @@ small {
     width: 100%;
     z-index: 9999;
 }
+  .show-on-small{
+      display: none !important;
+    }
 #pageloader.bw {
     background-color: #000000;
 }
@@ -305,6 +308,9 @@ ul.list-inline{
 }
 ul > li {
   margin-bottom: 15px;
+}
+ul.nav > li{
+  margin-bottom: 10px;
 }
 ol li {
     line-height: 25px;
@@ -2081,6 +2087,9 @@ table th.bg-pasific {
     .hide-for-small{
       display: none;
     }
+    .show-on-small{
+      display: block !important;
+    }
 }
 .svg-container {
     position: absolute;
@@ -2131,11 +2140,13 @@ table th.bg-pasific {
         height: 300px;
         z-index: 1;
     }
+    
 }
 
 /*  --------------------------------------------------------
 17. NAVBAR
 -------------------------------------------------------- */
+
 .navbar-pasific {
     background-color: transparent;
     padding: 20px 0;
@@ -2234,9 +2245,12 @@ table th.bg-pasific {
 
 /* navbar one-page */
 @media (max-width: 1200px) {
+  .ml150{
+      margin-left: 0 !important;
+    }
     .navbar-pasific.navbar-op {
         background-color: transparent;
-        border-color: #e7e7e7;
+        border-color: transparent;
         padding: 0;
         margin: 0;
         padding-bottom: 15px;
@@ -2248,7 +2262,7 @@ table th.bg-pasific {
     .navbar-op.top-nav-collapse-inverse {
         padding: 0;
         margin: 0;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
     .navbar-op .navbar-header {
         float: none;
@@ -2275,6 +2289,7 @@ table th.bg-pasific {
 	}
     .navbar-op .navbar-collapse.collapse {
         display: none!important;
+        margin-top: 20px;
     }
     .navbar-op .navbar-nav {
         float: none!important;
@@ -2289,12 +2304,13 @@ table th.bg-pasific {
     .navbar-op .navbar-nav>li>a {
         padding-top: 5px;
         padding-bottom: 5px;
-        color: rgba(255, 255, 255, 0.8) !important;
+        color: rgba(255, 255, 255, 1) !important;
     }
     .navbar-op .navbar-collapse {
         background: transparent;
     }
     .navbar-op .collapse.in{
+      padding-top: 80px;
   		display:block !important;
         background-color: #222;
 	}
@@ -2308,10 +2324,19 @@ table th.bg-pasific {
                 border-radius: 4px;
     }
     .navbar-fixed-top .navbar-collapse{
-      max-height: 380px;
+      max-height: 600px;
     }
     #page-top > nav > div > div.navbar-collapse.collapse.navbar-right > ul > li:nth-child(8){
       margin-left: 0;
+    }
+    #page-top > nav > div > div.navbar-collapse.navbar-right.collapse.in > ul > li.ml150{
+      margin-top: 80px;
+    }
+    .show-on-small{
+      display: block !important;
+    }
+    #welcome{
+      background-size: cover !important;
     }
 }
 .navbar-op.top-nav-collapse,
@@ -2331,6 +2356,7 @@ table th.bg-pasific {
 
 /* navbar multipage */
 @media(min-width:766px) {
+  
     .navbar-mp .dropdown:hover > .dropdown-menu {
         display: block;
     }
@@ -2589,11 +2615,12 @@ table th.bg-pasific {
 .intro .intro-body .intro-text {
     font-size: 16px;
     color:#545454;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 25px;
 }
 
 @media(min-width:960px) {
+
     .intro {
         height: 100%;
         padding: 0;
@@ -2620,6 +2647,16 @@ table th.bg-pasific {
 }
 
 @media(max-width:960px) {
+  
+ ul>li{
+  font-weight: 300;
+ }
+  .bg-grid{
+    display: none;
+  }
+  #chart{
+    height: 50% !important;
+  }
     .intro {
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -2634,6 +2671,7 @@ table th.bg-pasific {
 
     .intro .intro-body .intro-text {
         font-size: 100%;
+        border-left: 3px solid #1B832C;
     }
     .navbar-collapse .navbar-right .collapse .in{
       max-height: 380px;
@@ -2641,19 +2679,70 @@ table th.bg-pasific {
 }
 
 @media(max-width:768px) {
+  h1{
+    font-size: 36px !important;
+  }
+  h2{
+    font-size: 32px !important;
+    line-height: 46px !important;
+  }
+  #service h2{
+    font-size: 30px !important;
+  }
+  .pl70{
+    padding-left: 20px !important;
+  }
+  .pr70{
+    padding-right: 20px !important;
+  }
+  .pt160
+  {
+    padding-top: 80px !important;
+  }
+  .pb160{
+    padding-bottom: 80px !important;
+  }
+  .mb40{
+    margin-bottom: 20px !important;
+  }
+  .mb80{
+    margin-bottom: 50px !important;
+  }
+  .mb100{
+    margin-bottom: 60px !important;
+  }
+  .mb120,
+  .mb180{
+    margin-bottom: 80px !important;
+  }
+  #welcome > div > div.row.mb80 > div:nth-child(2) > h2{
+    margin-bottom: 30px;
+  }
+  #list-tabs > li {
+    padding: 10px 25px !important;
+  }
     .intro {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
         height: 50%;
-        background-size: cover;
+        background-size: cover !important;
     }
     p.border-around{
       padding: 10px;
     }    
     .navbar-collapse .navbar-right .collapse .in{
       max-height: 380px;
+    }
+    .text-left-small{
+      text-align: left;
+    }
+    #page-top > header > div > div > div > div > h1{
+      font-size: 48px !important;
+    }
+    #page-top > header > div > div > div > div > p{
+      font-size: 22px;
     }
 }
 /* Particles */
@@ -3077,7 +3166,8 @@ canvas {
     #portfolioMasonry .portfolio-masonry-one-item.width3 { width: 300px; }
     #portfolioMasonry .portfolio-masonry-one-item.height2 { height: 276px; }
     .button-lg{
-      padding: 20px 30px;
+      padding: 20px 10px;
+      font-size: 14px;
     }
 
 }
@@ -4559,6 +4649,9 @@ ul.pagination.pagination-pasific li.active a {
 .text-light2{
   opacity: 0.5 !important;
 }
+p.no-opacity{
+  opacity: 1 !important;
+}
 #welcome{
   background: url('../../img/about_bg.jpg') 0 250px no-repeat;
   background-size: 100% 100%;
@@ -4583,6 +4676,7 @@ a.dashed-href{
 }
 #list-tabs > li{
   padding: 10px 50px;
+  border: 1px solid transparent;
 }
 #list-tabs > li.active{
       border: 1px solid #5cb85c;
@@ -4611,7 +4705,7 @@ a.dashed-href{
     padding: 40px 150px;
 }
 .box-shadow{
-  box-shadow: 0 0 40px 0 rgba(29, 43, 67, 0.47);
+  box-shadow: 0 10px 50px 0 rgba(16, 26, 43, 0.59);
 }
 #chart{
        
@@ -4648,6 +4742,7 @@ a.dashed-href{
     z-index: 1;
     left: 150px;
     display: none;
+    box-shadow: 0 10px 50px 0 rgba(16, 26, 43, 0.59);
 }
 .maplabel i{
   position: absolute;
@@ -4678,4 +4773,121 @@ a.dashed-href{
     position: absolute;
     bottom: -25px;
     right: 46%;
+}
+
+#freeCall h4{
+      font-size: 30px;
+    line-height: 40px;
+    font-weight: 900;
+    padding-top: 25px;
+}
+#freeCall .modal-header{
+  border-bottom: none;
+}
+#freeCall label{
+    font-weight: 800 !important;
+    font-size: 13px;
+    color: #747474;
+}
+#freeCall label.label-required:after{
+      content: '*';
+    color: #f72630;
+}
+.spam_hidden{
+  display: none;
+}
+#freeCall .form_cust{
+  height: 44px !important;
+}
+
+#freeCall button#sendMessage{
+  font-size: 16px;
+  font-weight: 900 !important; 
+  padding: 18px;
+      box-shadow: 0 8px 30px 0 rgba(27, 131, 44, 0.35);;
+}
+#freeCall p a{
+  color: #1B832C;
+  border-bottom: 1px dashed #1B832C;
+  font-weight: 300;
+  font-size: 16px;
+}
+#freeCall p a:hover{
+  border-bottom: 1px dashed transparent;
+}
+#freeCall textarea{
+  resize: none;
+  display: none;
+}
+
+#freeCall button span{
+      font-size: 2em;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-weight: 100;
+}
+
+#contact2
+a.dashed-href{
+  padding: 10px 20px;
+  border: 1px dashed transparent;
+  display: inline-block;
+}
+#contact2 a.dashed-href.active{
+      border: 1px solid #5cb85c;
+    border-radius: 30px;
+    color: #5cb85c;
+}
+
+
+.city-row > p.text-uppercase.text-light.mb0{
+  font-size: 11px;
+    font-weight: 300;
+    /* letter-spacing: 0px; */
+}
+.city-row > p:nth-child(2){
+      font-size: 14px;
+    opacity: 0.8;
+}
+.city-row > a.pl0{
+    color: #1b832c;
+    border-bottom: 1px dashed;
+  }
+.city-row > p:nth-child(4) > a{
+      display: block;
+    margin-top: 15px;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+.city-row > h3{
+        text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+.city-row > p:nth-child(6){
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+.city-row > p:nth-child(6) > a{
+     
+    
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.58);
+  }
+  #contact2 .novosyb{
+    display: none;
+  }
+  .free-consult-li{
+    margin-top: 80px;
+    margin-bottom: 80px !important;
+  }
+.free-cons-button{
+  display: inline !important;
+    padding: 20px 50px !important;
+    background: #1b832c;
+    border-radius: 50px;
+    font-weight: bold;
 }

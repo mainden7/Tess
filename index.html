@@ -91,6 +91,49 @@
     <a href="op-index-bg-video.html#page-top" class="go-to-top">
       <i class="fa fa-long-arrow-up"></i>
     </a>
+
+    <!-- Modal -->
+<div class="modal fade" id="freeCall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="text-uppercase mt0 mb0 text-center" >
+            Бесплатная консультация
+            <small class="heading heading-solid center-block mb0"></small>
+          </h4>
+      </div>
+      <div class="modal-body pl50 pr50 pt0">
+       <form class="form-horizontal mt25 positioned" id="free_consult" method="POST" action="free_consult.php">
+              <input type="text" class="spam_hidden" name="spam_hidden">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label for="free_form_name" class="text-uppercase label-required">ИМЯ</label><br>
+                  <input type="text" class="required_in form-control form_cust" id="free_form_name" name="free_form_name" placeholder="Как к вам обращаться?">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label for="free_form_name" class="text-uppercase label-required">ТЕЛЕФОН</label><br>
+                  <input type="text" class="required_in form-control form_cust" id="free_form_tel" name="free_form_tel" placeholder="Для связи с вами">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <textarea type="text" class="form-control"  name="comment" rows="5"></textarea>
+                </div>
+              </div>
+              <p><a href="">Добавить комментарий</a></p>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <button type="submit" name="sendMessage" id="sendMessage" class="button button-md button-block button-red md_submit text-uppercase">Отправить</button>              
+                </div>
+              </div>              
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Navigation Area
     ===================================== -->
     <nav class="navbar navbar-pasific navbar-op navbar-fixed-top">
@@ -112,9 +155,9 @@
             <li><a href="op-index-bg-video.html#service">Услуги</a></li>
             <li><a href="op-index-bg-video.html#portfolio">Кейсы</a></li>
             <li><a href="op-index-bg-video.html#features">Стоимость</a></li>
-            <li><a href="op-index-bg-video.html#price">Отзывы</a></li>
             <li><a href="op-index-bg-video.html#contact">Контакты</a></li>  
-            <li><a href="op-index-bg-video.html" style='font-size: 18px; opacity: 1 !important; padding-right: 0' class="text-bold">+7(915)419 09 17</a></li>                      
+            <li class="ml150"><a href="op-index-bg-video.html" style='font-size: 18px; opacity: 1 !important; padding-right: 0' class="text-bold">+7(915)419 09 17</a></li>                      
+            <li class="show-on-small free-consult-li"><a href="" data-target='#freeCall' data-toggle='modal' class="show-on-small free-cons-button">Бесплатная консультация</a></li>  
           </ul>
         </div>
 
@@ -131,8 +174,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="brand-heading font-montserrat color-light text-bold animated mb70" data-in-effect="fadeInDown" data-animation="fadeInUp" data-animation-delay="200">Повышаем эффективность бизнес показателей</h1>
-              <p class="intro-text color-light text-open-sans text-light mb35 animated col-md-8" data-in-effect="swing" data-animation="fadeInRight" data-animation-delay="500">Решаем задачи и проблемы бизнеса, разрабатываем рекомендации и внедряем их совместно с клиентами.</p>
+              <h1 class="brand-heading font-montserrat color-light text-bold animated mb70" data-in-effect="fadeInDown" data-animation="fadeInDown" data-animation-delay="500">Повышаем эффективность бизнес показателей</h1>
+              <p class="intro-text color-light text-open-sans text-light mb35 animated col-md-8" data-in-effect="fadeInDown" data-animation="fadeInDown" data-animation-delay="800">Решаем задачи и проблемы бизнеса, разрабатываем рекомендации и внедряем их совместно с клиентами.</p>
             </div>
           </div>
         </div>
@@ -147,37 +190,37 @@
               <div class="col-md-1 relative" style="padding-left: 13px">
                 <div></div>
               </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               <div></div>
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               <div></div>
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               <div></div>
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               <div></div>
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
              
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               <div></div>
             </div>
-            <div class="col-md-1 relative">
+            <div class="col-md-1 col-sm-1 relative">
               <div style='margin-left: 83px'></div>
             </div>
             </div>
@@ -205,8 +248,8 @@
           <!-- title description end -->
         </div>
         <div class="col-md-6 col-sm-12 animated" data-animation="fadeInLeft" data-animation-delay="500">
-          <p class="text-light" style="font-size: 18px;">Tess Technology - компания, которая помогает клиентам повышать эффективность бизнес показателй за счет внедрения инструментов анализа внешних факторов рынка и применения методик менеджмента организаций(эффективного управления производством).</p>
-          <p class="text-light" style="font-size: 18px;">Клиенты, столкнувшиеся со стратегическими задачами, получают эффективные, внедряемы на практике решения, заточенные на результат именно их кампании и бизнеса. </p>
+          <p class="text-light no-opacity" style="font-size: 18px;">Tess Technology - компания, которая помогает клиентам повышать эффективность бизнес показателй за счет внедрения инструментов анализа внешних факторов рынка и применения методик менеджмента организаций(эффективного управления производством).</p>
+          <p class="text-light no-opacity" style="font-size: 18px;">Клиенты, столкнувшиеся со стратегическими задачами, получают эффективные, внедряемы на практике решения, заточенные на результат именно их кампании и бизнеса. </p>
         </div>
         <!-- title description end -->
       </div>
@@ -371,7 +414,7 @@
           </div>
           <div class="row ">
             <div class="col-md-12">
-              <div class="row" style="margin-bottom: 45px">
+              <div class="row mb40">
                 <div class="col-md-12  text-center">
                   <ul class="list-inline" id='list-tabs'>
                     <li class="active" data-filter='microsoft'><a class='dashed-href'>Microsoft</a></li>
@@ -382,7 +425,7 @@
                 </div>
               </div>
               <div class="row mb120 pb40" >
-                <div id="microsoft" class="hide-by-click">
+                <div id="microsoft" class="hide-by-click" data-animation="fadeInDown" data-animation-delay="200">
                   <div class="col-md-5 col-md-offset-1 hide-for-small" style="background: url('assets/img/case_img.jpg') 15px 0 no-repeat; background-size: 100% 100%; height: 500px">
 
                   </div>
@@ -439,28 +482,28 @@
                   <div class="col-md-12">
                     <h3 class="text-center mt0 mb40 text-light" style='font-size: 26px'>Наши клиенты</h3>
                     <div class="row">
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div>
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div>
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div>
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div> 
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div> 
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div>
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div>
-                      <div class="col-md-3 col-sm-3 col-xs-3 mb10">
+                      <div class="col-md-3 col-sm-6 col-xs-6 mb10">
                         <img src="assets/img/client_1.png" width="100%">
                       </div>
                     </div>
@@ -521,7 +564,7 @@
     </div><!-- row end -->   
     <div class="row">
       <div class="col-md-12 text-center">
-        <a class="button-o button-pasific button-lg hover-bounce-to-right ml10 animated fadeInUp visible text-bold" data-animation="fadeInUp" data-animation-delay="300">Запросить звонок/встречу</a>
+        <a class="button-o button-pasific button-lg hover-bounce-to-right ml10 animated fadeInUp visible text-bold" data-animation="fadeInUp" data-animation-delay="300" data-target='#freeCall' data-toggle='modal'>Запросить звонок/встречу</a>
       </div>
     </div>             
   </div><!-- container end -->
@@ -539,7 +582,7 @@
              <div class="col-md-8">
                <p class="text-light">Описание кейсов и подходов по решению бизнес задач компаний, информацию с методологии и методах аналитики, которые используются при реализации проектов клиентов можно прочитать в блоге</p>
              </div>
-             <div class="col-md-4 text-right">
+             <div class="col-md-4 col-sm-12 text-right text-left-small">
                <a class="button-o button-lg button-green hover-fade text-bold"><span class="span-hover">Перейти в блог</span></a>
              </div>
            </div>
@@ -547,34 +590,68 @@
        </div>
         <!-- Map
         =====================================-->
-        <div id="contact" style='position: relative;'>
+        <div id="contact" class='hide-for-small' style='position: relative;'>
           <div class="maplabel" id='maplabel1'>
             
-            <h4>Москва</h4>
+            <h4 style='font-weight: 900'>Москва</h4>
             <p>Серебряническая набережная, 29</p>
             <p>+7(915) 419 09 17</p>
             <p>mail@tesstech.ru</p>
           </div>
           <div class="maplabel" id='maplabel2'>
             
-            <h4>Новосибирск</h4>
+            <h4 style='font-weight: 900'>Новосибирск</h4>
             <p>Серебряническая набережная, 29</p>
             <p>+7(915) 419 09 17</p>
             <p>mail@tesstech.ru</p>
           </div>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
-                <div id="map" style="width: 100%; height: 600px; background-color: #000">
+              <div class="col-md-12 pl0 pr0">
+                <div id="map" style="width: 100%; height: 450px; background-color: #000">
                   <h3>Google Map</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div id="contact2" class="show-on-small pt60">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 style='' class="text-uppercase mt0 text-bold animated" data-animation="fadeInUp" data-animation-delay="100">Контакты<small class="heading heading-solid center-block"></small></h2>
+              </div>
+            </div>
+            <div class="row "  style="padding-bottom: 20px">
+              <div class="col-sm-6 col-xs-6 text-center mb10"><a href="" data-city='moscow' class="active dashed-href">Москва</a></div>
+              <div class="col-sm-6 col-xs-6 text-center mb10"><a href="" data-city='novosyb' class="dashed-href">Новосибирск</a></div>
+              <div class="col-xs-12 mt40 city-row moscow">
+                <p class="text-uppercase text-light mb0">
+                  главный офис
+                </p>
+                <p class="mb0">Серебряническая набережная, 29</p>
+                <a href="https://www.google.by/maps/@55.7494733,37.35232,10z" class="pl0">Показать на карте</a>
+                <p><a href="mailto: mail@tesstech.ru" class="pl0">mail@tesstech.ru</a></p>
+                <h3><a href="tel: +79154190917">+7(915) 419-09-17</a></h3>
+                <p><a href="" data-toggle='modal' data-target='#freeCall'>Перезвонить?</a></p>
+              </div>
+              <div class="col-xs-12 mt40 city-row novosyb">
+                <p class="text-uppercase text-light mb0">
+                  главный офис
+                </p>
+                <p class="mb0">Серебряническая набережная, 21</p>
+                <a href="https://www.google.by/maps/@55.7494733,37.35232,10z" class="pl0">Показать на карте</a>
+                <p><a href="mailto: mail@tesstech.ru" class="pl0">mail@tesstech.ru</a></p>
+                <h3><a href="tel: +79154190917">+7(915) 419-09-17</a></h3>
+                <p><a href="" data-toggle='modal' data-target='#freeCall'>Перезвонить?</a></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
-        <div id="footer">
-          <div class="container pt40 pb40">
+        <div id="footer" class="hide-for-small">
+          <div class="container pt40 pb20">
             <div class="row">
               <div class="col-md-4">
                 <h3 class="text-uppercase mt0 text-bold mb0" style='font-size: 24px; line-height: 29px'>TESS Technology</h3>
@@ -586,8 +663,18 @@
               </div>
               <div class="col-md-4">
                 <h2 class="text-uppercase text-right mt0 text-bold mb0"  style="font-size: 21px; line-height: 21px;">+7(915) 419-09-17</h2>
-                <p class="text-right"><a href="" class="text-light2" style="font-size: 16px; border-bottom: 1px dashed #685c5c">Перезвонить?</a></p>
+                <p class="text-right"><a href="" data-toggle='modal' data-target='#freeCall' class="text-light2" style="font-size: 16px; border-bottom: 1px dashed #685c5c">Перезвонить?</a></p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer2" class="show-on-small" style="background-color: #1d2b43">
+          <div class="container pt40 pb20">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="text-uppercase mt0 text-bold mb0" style='font-size: 24px; line-height: 29px; color: #fff'>TESS Technology</h3>
+                <p class="text-light2" style='font-size: 14px; color: #fff; opacity: 0.8;'>Стратегические решения для бизнеса</p>
+              </div>  
             </div>
           </div>
         </div>

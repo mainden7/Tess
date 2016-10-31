@@ -387,12 +387,29 @@ $(window).load(function() {
       $('#list-tabs li a').click(function(){
         var filter = $(this).parent().attr('data-filter');
         $('#list-tabs li').removeClass('active');
-        $('.hide-by-click').hide();
+        $('.hide-by-click').hide(400, 'swing');
         $(this).parent().addClass('active');
         var id = '#' + filter;
-        $(id).show();
+        $(id).show(400, 'swing');
       });
     });
 
-    
+    $(function(){
+      $('#freeCall a').click(function(e){
+        e.preventDefault();
+        $('#freeCall textarea').show().focus();
+      });
+    });
+
+    $(function(){
+      $('#contact2 a.dashed-href').click(function(e){
+        e.preventDefault();
+        var target = $(this).attr('data-city');
+        var id = '.' + target;
+        $('.city-row').hide();
+        $(id).show();
+        $('#contact2 a').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
 });
