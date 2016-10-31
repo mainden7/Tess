@@ -4954,11 +4954,21 @@ a.dashed-href{
  padding-left: 0 !important; 
 }
 }
+@media(min-width: 1200px){
+  #logo_image2{
+    display: none;
+  }
+}
 @media(max-width: 1200px){
  /*  #nav1{
    display: none;
  } */
-  
+  #logo_image2{
+    display: block;
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 5px;
+  }
 #nav1{
       background: transparent !important;
     border-bottom: 1px solid transparent;
