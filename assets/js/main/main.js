@@ -397,7 +397,9 @@ $(window).load(function() {
     $(function(){
       $('#freeCall a').click(function(e){
         e.preventDefault();
-        $('#freeCall textarea').show().focus();
+        $('#freeCall .textarea_').show();
+         $('#freeCall .textarea_ textarea').focus();
+        $(this).hide();
       });
     });
 
@@ -412,4 +414,6 @@ $(window).load(function() {
         $(this).addClass('active');
       });
     });
+
+    
 });

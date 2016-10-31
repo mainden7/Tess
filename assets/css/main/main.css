@@ -4815,7 +4815,7 @@ a.dashed-href{
 #freeCall p a:hover{
   border-bottom: 1px dashed transparent;
 }
-#freeCall textarea{
+#freeCall .textarea_{
   resize: none;
   display: none;
 }
@@ -4890,4 +4890,107 @@ a.dashed-href{
     background: #1b832c;
     border-radius: 50px;
     font-weight: bold;
+}
+@media(max-width: 480px){
+  #page-top > header > div > div > div > div > h1{
+    font-size: 30px !important;
+  }
+  #page-top > header > div > div > div > div > p{
+    font-size: 14px;
+  }
+  #page-top > nav > div > div.navbar-collapse.navbar-right.collapse.in > ul > li.show-on-small.free-consult-li{
+    font-size: 14px;
+  }
+  #page-top > nav > div > div.navbar-collapse.navbar-right.collapse.in > ul > li.show-on-small.free-consult-li > a{
+    padding: 20px 30px !important;
+  }
+  #service > div > div:nth-child(3) > div > div > div.col-md-5.col-md-push-6.col-md-offset-1 > ul,
+  #service > div > div.row.pb160 > div > div > div.col-md-5.col-md-push-6.col-md-offset-1 > ul{
+    padding-left: 13px;
+  }
+}
+@media(min-width: 1200px){
+  #nav2{
+    display: none;
+  }
+  #nav1{
+    display: block;
+  }
+}
+#nav2{
+      z-index: 100500;
+    background: #161d2b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#nav2 .showing{
+  display: none;
+}
+#nav2 i.fa{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 100;
+  color: #b6b6b6;
+}
+#nav2 .col-md-12{
+  text-align: center;
+  padding-top: 80px;
+}
+#nav2 ul li a{
+  color: #fff;
+  font-weight: 900;
+}
+#nav2 a.free-cons-button{
+  padding: 20px 30px !important;
+}
+@media(max-width: 1200px){
+ /*  #nav1{
+   display: none;
+ } */
+  
+#nav1{
+      background: transparent !important;
+    border-bottom: 1px solid transparent;
+}
+#nav1 > div > div.navbar-collapse.navbar-right.collapse.in,
+#nav1 > div > div.navbar-collapse.navbar-right.collapsing{
+      position: absolute;
+    width: 100%;
+    top: 0px;
+    margin-top: 0px;
+}
+#nav1 ul li a{
+  font-weight: 900;
+}
+#nav1 > div > div.navbar-header > a{
+  display: none;
+}
+#nav1 > div > div.navbar-header > button{
+  z-index: 1233;
+}
+  .navbar-op .collapse.in{
+      padding-top: 80px;
+      display:block !important;
+        background-color: #161d2b !important;
+  }
+  .top-nav-collapse {
+    padding: 0px 0;
+    background: #fff !important;
+}
+.navbar-op .collapse.in{
+      padding-top: 80px;
+      display:block !important;
+        background-color: #161d2b;
+  }
+  .navbar-op .collapsing, .in {
+        background-color: #161d2b;
+    }
+    #contact,
+    #footer{
+      display: none;
+    }
+
 }
