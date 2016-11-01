@@ -18,10 +18,10 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel'])&&$_POST['t
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
         $headers .= "From: Отправитель <from@example.com>\r\n"; 
-        if(mail($to, $subject, $message, $headers)){
-            return true;
+        if(@mail($to, $subject, $message, $headers)){
+            echo 'true';
         } else{
-            return false;
+            echo 'false';
         }
 }
 ?>

@@ -413,7 +413,13 @@ $(window).load(function() {
           type: 'POST',
           data: data,
           url: 'mail_sender.php',
-          success: function(){
+          success: successSubmit
+       });
+      });
+    });
+    function successSubmit( response ){
+      var res = $.trim(response);
+      if(res == 'true'){
             $('#freeCall').modal('hide');
             swal({
               title: "Ваша сообщение усешно отправлено",          
@@ -421,18 +427,16 @@ $(window).load(function() {
               timer: 2000,   
               showConfirmButton: false
             });
-          },
-          error: function(){
+      }else{
            swal({
              title: "Что-то пошло не так!",
              type: "error",
              timer: 2000,   
              showConfirmButton: false
            });
-         }
-       });
-      });
-    });
+         
+      }
+    }
 
     
 });
