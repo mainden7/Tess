@@ -411,7 +411,7 @@ $(window).load(function() {
         $.ajax({
           type: 'POST',
           data: data,
-          url: '/mail_sender.php',
+          url: 'mail_sender.php',
           ssuccess: function(){
             $('#freeCall').modal('hide');
             swal({
