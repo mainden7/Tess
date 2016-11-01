@@ -22,6 +22,7 @@
     
     <!-- Load Main CSS 
     =====================================-->
+    <link rel="stylesheet" href="assets/css/main/sweetalert.css">
     <link rel="stylesheet" href="assets/css/main/main.css">
     <link rel="stylesheet" href="assets/css/main/setting.css">
     <link rel="stylesheet" href="assets/css/main/hover.css">
@@ -104,18 +105,18 @@
           </h4>
       </div>
       <div class="modal-body pl50 pr50 pt0">
-       <form class="form-horizontal mt25 positioned" id="free_consult" method="POST" action="free_consult.php">
+       <form class="form-horizontal mt25 positioned" id="free_consult">
               <input type="text" class="spam_hidden" name="spam_hidden">
               <div class="form-group">
                 <div class="col-sm-12">
                   <label for="free_form_name" class="text-uppercase label-required">ИМЯ</label><br>
-                  <input type="text" class="required_in form-control form_cust" id="free_form_name" name="free_form_name" placeholder="Как к вам обращаться?">
+                  <input type="text" class="required_in form-control form_cust" id="free_form_name" name="name" placeholder="Как к вам обращаться?" required="">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-12">
                   <label for="free_form_name" class="text-uppercase label-required">ТЕЛЕФОН</label><br>
-                  <input type="text" class="required_in form-control form_cust" id="free_form_tel" name="free_form_tel" placeholder="Для связи с вами">
+                  <input type="text" class="required_in form-control form_cust" id="free_form_tel" name="tel" placeholder="Для связи с вами" required="">
                 </div>
               </div>
               <div class="form-group">
@@ -714,6 +715,7 @@
     <script src="assets/js/core/bootstrap.min.js"></script>
     <script src="assets/js/main/jquery.appear.js"></script>
     <script src="assets/js/main/jquery.sticky.js"></script>
+    <script src="assets/js/main/sweetalert-dev.js"></script>
     <script src="assets/js/main/main.js"></script> 
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd_SaifTZQ-vwarl1l9ZJwSCFazqLTisA&callback=initMap">

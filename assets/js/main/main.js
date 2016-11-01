@@ -3,6 +3,7 @@
 -------------------------------------------- */
 $(document).ready(function() {
     
+
 	/* --------------------------------------------------------
 	 ANIMATED PAGE ON REVEALED
 	----------------------------------------------------------- */
@@ -404,14 +405,31 @@ $(window).load(function() {
     });
 
     $(function(){
-      $('#contact2 a.dashed-href').click(function(e){
-        e.preventDefault();
-        var target = $(this).attr('data-city');
-        var id = '.' + target;
-        $('.city-row').hide();
-        $(id).show();
-        $('#contact2 a').removeClass('active');
-        $(this).addClass('active');
+      $('#free_consult').submit(function(e){
+        var data = $(this).serialize();
+
+        $.ajax({
+          type: 'POST',
+          data: data,
+          url: '/mail_sender.php',
+          ssuccess: function(){
+            $('#freeCall').modal('hide');
+            swal({
+              title: "Ваша сообщение усешно отправлено",          
+              type: "success",
+              timer: 2000,   
+              showConfirmButton: false
+            });
+          },
+          error: function(){
+           swal({
+             title: "Что-то пошло не так!",
+             type: "error",
+             timer: 2000,   
+             showConfirmButton: false
+           });
+         }
+       });
       });
     });
 
