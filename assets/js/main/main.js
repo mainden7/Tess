@@ -412,7 +412,7 @@ $(window).load(function() {
           type: 'POST',
           data: data,
           url: 'mail_sender.php',
-          ssuccess: function(){
+          success: function(){
             $('#freeCall').modal('hide');
             swal({
               title: "Ваша сообщение усешно отправлено",          
