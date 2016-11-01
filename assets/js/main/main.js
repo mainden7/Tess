@@ -406,6 +406,7 @@ $(window).load(function() {
 
     $(function(){
       $('#free_consult').submit(function(e){
+        e.preventDefault();
         var data = $(this).serialize();
 
         $.ajax({
