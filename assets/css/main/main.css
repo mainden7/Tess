@@ -5030,7 +5030,7 @@ a.dashed-href{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1005000;
+    z-index: 1005;
     /* padding: 10px 0; */
     /* background: #fff; */
     /* padding-bottom: 25px; */
@@ -5060,6 +5060,10 @@ a.dashed-href{
     top: 10px;
     right: 15px;
     color: #dedede;
+  }
+  #opened ul,
+  #opened ul li{
+    float: none;
   }
   #opened ul li a{
         color: #fff;
