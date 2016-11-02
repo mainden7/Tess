@@ -66,7 +66,15 @@ $(document).ready(function() {
             }, 900, function(){
                 window.location.hash = hash;
             });
+            var mq = window.matchMedia( "(min-width: 1200px)" );
+            if (mq.matches) {
+
+            }else{
+              $('#opened').hide();
+              $('#closed').show();
+            }
         });
+      
     });
     
 
