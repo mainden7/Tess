@@ -394,6 +394,17 @@ $(window).load(function() {
         $(id).show(400, 'swing');
       });
     });
+    $(function(){
+      $('#contact2 a.dashed-href').click(function(e){
+        e.preventDefault();
+        var target = $(this).attr('data-city');
+        $('#contact2 a.dashed-href').removeClass('active');
+        $(this).addClass('active');
+        $('.city-row').hide();
+        $('.' + target).show();
+
+      });
+    });
 
     $(function(){
       $('#freeCall a').click(function(e){

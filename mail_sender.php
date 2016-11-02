@@ -14,7 +14,7 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel'])&&$_POST['t
                     </head>
                     <body>
                         <p>Имя: '.$_POST['name'].'</p>
-                        <p>Телефон: '.$_POST['phone'].'</p>  
+                        <p>Телефон: '.$_POST['tel'].'</p>  
                         <p>Сообщение: '.$msg.'</p>                      
                     </body>
                 </html>'; 
