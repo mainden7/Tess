@@ -5040,8 +5040,12 @@ a.dashed-href{
     margin-top: 10px;
     margin-bottom: 16px;
   }
+
  .but_nav i {
     color: #dedede;
+  }
+  .but_nav i.fa-bars{
+    color: #5cb85c;
   }
   #opened{
     background: #161d2b;
