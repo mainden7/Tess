@@ -574,7 +574,7 @@ ul.no-icon-list li {
 .panel-collapse.collapse.in {
     background-color: #fff !important;
 }
-.panel-collapse.collapsing {
+.panel-collapse.d {
     background-color: #fff !important;
 }
 /*  ----------------------------------------------------
@@ -2314,7 +2314,7 @@ table th.bg-pasific {
   		display:block !important;
         background-color: #222;
 	}
-    .navbar-op .collapsing, .in {
+    .navbar-op .d, .in {
         background-color: #222;
     }
     .navbar-op.navbar-center {
@@ -2399,7 +2399,7 @@ table th.bg-pasific {
   		display:block !important;
         background-color: #222;
 	}
-    .navbar-mp .collapsing, .in {
+    .navbar-mp .d, .in {
         background-color: #222;
     }
     .navbar-mp .navbar-brand img {
@@ -5003,7 +5003,7 @@ a.dashed-href{
       display:block !important;
         background-color: #161d2b;
   }
-  .navbar-op .collapsing, .in {
+  .navbar-op .d, .in {
         background-color: #161d2b;
     }
     #contact,
@@ -5011,4 +5011,61 @@ a.dashed-href{
       display: none;
     }
 
+}
+@media(min-width: 1200px){
+  #opened,
+  #closed{
+    display: none;
+  }
+}
+@media(max-width: 1200px){
+  #nav1{
+    display: none;
+  }
+  #opened{
+    display: none;
+  }
+  #closed{
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1005000;
+    /* padding: 10px 0; */
+    /* background: #fff; */
+    /* padding-bottom: 25px; */
+  }
+  .but_nav{
+        text-align: right;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+ .but_nav i {
+    color: #dedede;
+  }
+  #opened{
+    background: #161d2b;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1005;
+
+  }
+  #opened .showing{
+        margin-top: 100px;
+    text-align: center;
+  }
+  #opened i{
+        position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #dedede;
+  }
+  #opened ul li a{
+        color: #fff;
+    font-weight: 900;
+  }
+  #opened ul li a:hover{
+    background: transparent;
+  }
 }
